@@ -1,0 +1,9 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "./mvnw -B -DskipTests clean install"
+  },
+  "deploy": {
+    "startCommand": "java -jar target/*.jar"
+  }
+}
