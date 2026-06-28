@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: finance_app_backend
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
+server:
+  port: 8080
+  servlet:
+    session:
+      cookie:
+        name: FINANCE-APP-SESSION
+        path: /
+        http-only: true
+        same-site: lax
+        max-age: 86400
