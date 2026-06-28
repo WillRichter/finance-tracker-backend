@@ -3,7 +3,7 @@
 A REST API built with Spring Boot for tracking personal income and expenses.
 
 ## Tech Stack
-- Java 25
+- Java 21
 - Spring Boot
 - Spring Security (Session-based authentication)
 - Spring Data JPA
