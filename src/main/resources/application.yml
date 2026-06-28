@@ -18,5 +18,5 @@ server:
         name: FINANCE-APP-SESSION
         path: /
         http-only: true
-        same-site: lax
+        same-site: none
         max-age: 86400
