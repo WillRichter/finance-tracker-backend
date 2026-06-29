@@ -4,7 +4,14 @@ spring:
     username: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
+  session:
+    jdbc:
+      cleanup-cron: "0 0 6 * * *"
+
 server:
+  tomcat:
+    threads:
+      max: 10
   servlet:
     session:
       cookie:

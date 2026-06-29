@@ -1,9 +1,9 @@
 {
   "build": {
-    "builder": "NIXPACKS",
+    "builder": "RAILPACK",
     "buildCommand": "chmod +x mvnw && ./mvnw -B -DskipTests clean install"
   },
   "deploy": {
-    "startCommand": "java -jar target/*.jar"
+    "startCommand": "java  -Xmx300m -jar target/*.jar"
   }
 }
